@@ -43,6 +43,7 @@ header nav a {
     padding: 32px;
     text-decoration: none;
 }
+
 .fundoEscola{
     display: flex;
     justify-content: center;
@@ -79,7 +80,6 @@ header nav a {
     gap: 5%;
     /*topo, direita, baixo, esquerda*/
     padding: 24px 80px 128px 80px;
-    position: relative;
 }
 h1,
 h2 {
@@ -203,4 +203,60 @@ footer p {
 footer p a {
     color: #263138;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1020px) {
+    nav{
+        display: none;
+    }
+    header {
+        background-color: #00C2FF;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    .menuMobile{display: block;}
+    .fundoEscola{
+        height: 200px;
+    }
+    .fundoEscola h1{ 
+        font-size:20px;
+        width: 90%;
+    }
+    #biblioteca img{display: none;}
+    #sobre img{display: none;}
+    footer{
+        display: grid;
+    }
+    footer{
+        padding: 25px;
+        font-size: 14px;
+        gap: 10px;
+    }
+    footer nav{
+        display:block;
+    }
+    #retira{
+        display:none;
+    }
+    #biblioteca {
+        text-align: justify;
+        padding: 25px;
+    }
+    #sobre {
+        padding: 25px;
+    }
+    h1,
+    h2 {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    .paragrafo {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
 }
